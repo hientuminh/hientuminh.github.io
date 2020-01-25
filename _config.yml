@@ -1,0 +1,52 @@
+# Site Info
+title: HienTu
+tagline: 'Learning to be a giant.'
+description: 'Made by <a href="http://hientuminh.github.io" target="_blank">@hientu</a>.'
+baseurl: ""
+url: http://hientuminh.github.io
+logo: '/public/logo.png'
+
+# Site configurations
+gems:
+  - jekyll-paginate
+markdown: kramdown
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _scss
+paginate: 5
+paginate_path: '/page:num'
+permalink: pretty
+
+version: 1.0.0
+
+# About/contact
+author:
+  name: HienTu
+  description: A passionate <strong>developer and researcher</strong>, learning to be a giant.
+  contact:
+    linkedin: https://www.linkedin.com/in/hien-tu-754977122/
+    github: https://github.com/hientuminh
+
+# Navigation (2nd level links supported)
+nav:
+  Home:
+    - '/'
+  Categories:
+    - '/categories/'
+  Tags:
+    - '/tags/'
+  About:
+    - '/about/'
+# Where are tags and categories displayed
+tag_page: '/tags/'
+category_page: '/categories/'
+
+# Puglins
+mathjax: true # whether support mathjax
+google_analytics_token: 'UA-156981537-1' # leave blank if you don't want google analytics
+disqus_short_name: 'tminhhin' # leave blank if you don't want disqus
+plugins:
+  - jekyll-paginate

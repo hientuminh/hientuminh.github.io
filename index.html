@@ -20,7 +20,7 @@ title: Blog
     {% endif %}
 
     <article>
-      {{ post.excerpt | markdownify }}
+      {{ post.excerpt | markdownify | truncatewords:50 }}
     <article>
 
     <div class="post-more">

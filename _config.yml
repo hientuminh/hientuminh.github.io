@@ -47,6 +47,6 @@ category_page: '/categories/'
 # Puglins
 mathjax: true # whether support mathjax
 google_analytics_token: 'UA-156981537-1' # leave blank if you don't want google analytics
-disqus_short_name: 'tminhhin' # leave blank if you don't want disqus
+disqus_short_name: 'hientuminh' # leave blank if you don't want disqus
 plugins:
   - jekyll-paginate

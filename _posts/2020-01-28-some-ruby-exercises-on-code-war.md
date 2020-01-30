@@ -9,6 +9,46 @@ My profile của codewar:
 <img src="https://www.codewars.com/users/hientuminh/badges/large
 "/>
 
+## Mean Square Error
+### Details
+Complete the function that:
+- accepts two integer arrays of equal length
+- compares the value each member in one array to the corresponding member in the other
+- squares the absolute value difference between those two values
+- and returns the average of those squared absolute value difference between each member pair.
+```
+[1, 2, 3], [4, 5, 6]              -->   9   because (9 + 9 + 9) / 3
+[10, 20, 10, 2], [10, 25, 5, -2]  -->  16.5 because (0 + 25 + 25 + 16) / 4
+[-1, 0], [0, -1]                  -->   1   because (1 + 1) / 2
+```
+### Solution
+```ruby
+def solution (arr1, arr2)
+  length = arr1.length
+  (0...length).inject(0) { |sum, index|
+    sum +  ((arr1[index] - arr2[index]).abs)**2
+  } / length.to_f
+end
+```
+### Other solutions
+- Using sum, fdiv
+```ruby
+def solution (arr1, arr2)
+  arr1.map.with_index { |n, i| (n - arr2[i]).abs ** 2 }.sum.fdiv(arr1.length)
+end
+```
+- Using Zip
+```ruby
+def solution (arr1, arr2)
+  arr1.zip(arr2).sum { |a, b| (a-b)**2 } .fdiv(arr1.size)
+end
+```
+- In JS
+```javascript
+function solution(a, b) {
+  return a.reduce(function(s, n, i) { return s + Math.pow(n - b[i], 2) }, 0) / a.length;
+}
+```
 ## Number of trailing zeros of N!
 ### Details
 > N! = 1 * 2 * 3 * ... * N

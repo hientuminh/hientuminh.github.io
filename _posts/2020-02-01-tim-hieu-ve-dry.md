@@ -7,6 +7,7 @@ tags: [dev, clean code]
 ## DRY (Don't repeat yourself) là gì
 - Đầu tiên code dư thừa không phải là DRY (DON’T REPEAT YOURSELF)
 - Định nghĩa về DRY tại https://en.wikipedia.org/wiki/Don%27t_repeat_yourself
+
 ## Một vài điểm cần lưu ý với định nghĩa DRY
 - Thứ nhất: DRY nói về knowledge không phải là code ( knowledge có thể hiểu là business logic).
 - Thứ hai: DRY là nguyên tắc, nguyên lý (giống như SOLID, YAGNI, WET) chứ không phải là quy tắc (rules), do đó không nên áp dụng một cách cứng nhắc.
